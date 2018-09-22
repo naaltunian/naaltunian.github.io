@@ -14,4 +14,22 @@
     background: #fff;
     @include easeOut;
   }
+
+  // rotates into menu lines
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      &:nth-child(1){
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      // hides second line
+      &:nth-child(2){
+        opacity: 0;
+      }
+      &:nth-child(3){
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
 }
