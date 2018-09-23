@@ -211,6 +211,23 @@ main {
   background: #c4c4c4;
   color: #333; }
 
+.boxes {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px solid #fff;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 2rem; }
+    .boxes div:hover {
+      background: #eece1a;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
+
 #footer {
   text-align: center;
   padding: 1rem;
